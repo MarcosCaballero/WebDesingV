@@ -5,11 +5,6 @@ if (
   window.location.pathname === "/WebDesingV/consults.html"
 ) {
   addEventListener("load", () => {
-    if (window.location.pathname === "/WebDesingV/consults.html") {
-      const linkReturnHome = document.getElementById("link-return-home");
-      linkReturnHome.href = "/WebDesingV";
-    }
-
     fetch("https://web-design-c99l.onrender.com/")
       .then((res) => res.json())
       .then(({ data }) => fillTable(data));
@@ -23,15 +18,6 @@ if (
   window.location.pathname === "/WebDesingV/"
 ) {
   addEventListener("load", () => {
-    // mod navbar
-    if (
-      window.location.pathname === "/WebDesingV" ||
-      window.location.pathname === "/WebDesingV/index.html"
-    ) {
-      const linkViewconsults = document.getElementById("link-view-consults");
-      linkViewconsults.href = "/WebDesingV/consults.html";
-    }
-
     const form = document.getElementById("form-consult");
     form.addEventListener("submit", (event) => {
       event.preventDefault();
