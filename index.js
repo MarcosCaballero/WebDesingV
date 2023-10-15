@@ -1,6 +1,9 @@
 "use strict";
 
-if (window.location.pathname === "/consults.html") {
+if (
+  window.location.pathname === "/consults.html" ||
+  window.location.pathname === "/WebDesingV/consults.html"
+) {
   addEventListener("load", () => {
     fetch("https://web-design-c99l.onrender.com/")
       .then((res) => res.json())
@@ -10,7 +13,9 @@ if (window.location.pathname === "/consults.html") {
 
 if (
   window.location.pathname === "/" ||
-  window.location.pathname === "/index.html"
+  window.location.pathname === "/index.html" ||
+  window.location.pathname === "/WebDesingV/index.html" ||
+  window.location.pathname === "/WebDesingV/"
 ) {
   addEventListener("load", () => {
     const form = document.getElementById("form-consult");
