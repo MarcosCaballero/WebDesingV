@@ -498,7 +498,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
     width: 40vw;
     padding: 40px;
     border-radius: 20px;
@@ -550,17 +550,10 @@ table {
     border-radius: 5px;
 }
 
-.content-send_button {
-    display: flex;
-    width: calc(80%);
-    justify-content: flex-start;
-    align-items: center;
-    margin: 20px;
-}
-
 .content-send_button > button {
-    width: 100px;
+    max-width: 300px;
     height: 40px;
+    padding: 10px 20px;
     background-color: var(--color-1);
     color: white;
     border: none;
